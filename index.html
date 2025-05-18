@@ -3,19 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <title>Contact Me</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: linear-gradient(135deg, #4a90e2, #50e3c2);
       text-align: center;
-      padding-top: 100px;
+      padding: 60px 20px;
+      color: #fff;
+      min-height: 100vh;
+      margin: 0;
     }
+
+    h2 {
+      background: rgba(0, 0, 0, 0.25);
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
     a {
-      color: #0073e6;
+      color: #ffd700;
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    .visitor-badge {
-      margin-top: 30px;
+
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .section-header {
+      margin-top: 60px;
+      color: #ffd700;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    table {
+      margin: 40px auto;
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 90%;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.4);
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 10px;
+      }
+      table {
+        width: 100%;
+      }
+      th, td {
+        padding: 12px 10px;
+      }
     }
   </style>
 </head>
@@ -25,11 +90,36 @@
     <a href="mailto:tahmidahmedansary@proton.me">tahmidahmedansary@proton.me</a>.
   </h2>
 
-  <div class="visitor-badge">
-    <img
-      src="https://visitor-badge.glitch.me/badge?page_id=tahmidahmedansary.tahmidahmedansary"
-      alt="Visitor Count"
-    />
-  </div>
+  <p style="margin-top: 20px;">
+    Or find me on
+    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>.
+  </p>
+
+  <h3 class="section-header">Education History</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Institute</th>
+        <th>Level</th>
+        <th>End Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2011</td>
+        <td>Chittagong Cantonment Public College</td>
+        <td>Primary school</td>
+        <td>2015</td>
+      </tr>
+      <tr>
+        <td>2015</td>
+        <td>Jalalabad Cantonment English School and College</td>
+        <td>Secondary school</td>
+        <td>2024</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
